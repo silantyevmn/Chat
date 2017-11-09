@@ -12,6 +12,7 @@ public class Messages {
 
     /msg_format_error
     /type_brodcast  разослать всем
+    /userlist&user1&user2
      */
 
     public static final String DELIMITER="&";
@@ -20,6 +21,11 @@ public class Messages {
     public static final String AUTH_DENIED="/auth_denied";
     public static final String MSG_FORMAT_ERROR="/msg_format_error";
     public static final String TYPE_BRODCAST="/type_brodcast";
+    public static final String USER_LIST="/userlist";
+
+    public static String getUserList(String users){
+        return USER_LIST+DELIMITER+users;
+    }
 
     public static String getAuthRequest(String login,String pass){
         return AUTH_REQUEST+DELIMITER+login+DELIMITER+pass;
